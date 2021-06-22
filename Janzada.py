@@ -998,7 +998,7 @@ def c_s():
     print ' \x1b[1;97m~~~ Crack Running ~~~\x1b[1;91m'
     time.sleep(0.5)
     print 47 * '-'
-    jalan '\t\x1b[1;95m    OSCAR X JANZADA\x1b[1;91m'
+    print'\t\x1b[1;95m    OSCAR X JANZADA\x1b[1;91m'
     print 47 * '-'
 
     def main(arg):
